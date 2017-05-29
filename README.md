@@ -92,6 +92,13 @@ npm run cordova-run-ios
 npm run cordova-run-browser
 ```
 
+### Note
+When you run the app using the browser platform, if you don't want the browser to auto-open,
+change the next line in the file "platforms/browser/cordova/run":
+	//return cordovaServe.launchBrowser({target: args.target, url: projectUrl});
+        return cordovaServe;
+
+
 ## Project Structure
 
 * `src/assets` - folder with static assets (images)
