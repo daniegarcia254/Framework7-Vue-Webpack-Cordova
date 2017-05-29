@@ -51,9 +51,15 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+# Output of 'npm build'
+dist
+
 # Yarn Integrity file
 .yarn-integrity
 
 # dotenv environment variables file
 .env
 
+# Cordova
+platforms
+plugins
