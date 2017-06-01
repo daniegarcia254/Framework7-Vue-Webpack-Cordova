@@ -1,8 +1,4 @@
 /* =========
-Your custom styles go here
-========= */
-
-/* =========
 GENERAL STYLES
 ========= */
 
@@ -48,97 +44,10 @@ GENERAL STYLES
 	}
 }
 
-/* =========
-MAIN PAGE
-========= */
-#main-view {
-	background-color: #f54764;
-	font-family: 'nunito-medium';
-	padding: 0% 10%;
-	.row {
-		margin-bottom: 10px;
-		color: white;
-		text-align: center;
-	}
-}
-
-#block-fb-email-login, #block-register-login {
-	position: relative;
-	top: 50%;
-	transform: translateY(-150%);
-}
-#block-fb-email-login {
-	margin-bottom: 80px;
-}
-
-#fb-login-btn {
-	background-color: #3b5998;
-	i { vertical-align: middle; }
-	span { margin: 0px 10px; font-size: 15px; }
-}
-#email-login-btn {
-	background-color: white;
-	color: #f54764;
-}
-#login-btn {
-	margin: 0px 50px;
-}
-#email-login-btn span, #login-btn span{
-	margin: 0px 20px;
-	font-size: 15px;
-}
-#block-register-login .row:nth-child(1) span:nth-child(1){
-	font-size: 20px;
-}
-#register-login-btn {
-	border-width: 2px;
-	border-color: white;
-	color: white;
-}
-
 
 /* =========
-LOGIN && REGISTER PAGES
+  IMPORTS
 ========= */
-.login-register-page {
-	background-color: #f54764;
-	font-family: 'nunito-medium';
-	padding: 0% 5%;
-	
-	.item-content {
-		background-color: #f54764;
-	}
-	ul {
-		margin-top: 100px;
-		background-color: transparent;
-	}
-	li {
-		margin-bottom: 10px;
-	}	
-	ul:before {
-		background-color: transparent;
-	}
-	ul:after {
-		left: 15px;
-	}
-	.list-block .label {
-		color: white;
-		left: 15px;
-		font-size: 12px;
-		margin-top: 5px;
-		width: 100%;
-	}
-	#terms-and-conditions {
-		color: white;
-		text-align: center;
-		.link {
-			color: white;
-			text-decoration: underline;
-		}
-	}
-}
-	
-#login-btn, #register-btn {
-	background-color: white;
-	color: #f54764;
-}
+
+@import 'main';
+@import 'login-register';
