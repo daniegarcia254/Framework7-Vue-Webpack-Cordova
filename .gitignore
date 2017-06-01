@@ -53,6 +53,7 @@ typings/
 
 # Output of 'npm build'
 dist
+www
 
 # Yarn Integrity file
 .yarn-integrity

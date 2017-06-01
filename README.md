@@ -1,8 +1,8 @@
-# Framework7 Vue + Webpack + Cordova App Template
+# Login App Template with Framework7 Vue + Webpack2 + Cordova
 
-A full-featured Framework7 + Vue + Webpack setup with hot-reload & css extraction.
+A full-featured Framework7 + Vue + Webpack2 setup with hot-reload.
 
-Based on [Framework7-Vue-Webpack-Template](https://github.com/nolimits4web/Framework7-Vue-Webpack-Template.git).
+Based on [Framework7 - Vue - Webpack Cordova Template](https://github.com/centrual/cordova-template-framework7-vue-webpack).
 
 
 ## Pre-requisites
@@ -69,27 +69,13 @@ Once you have all the pre-requisites installed, clone this repo and have some fu
 # install dependencies
 npm install
 
-# serve project with hot reload at localhost:10000
-# port can be configured in config/index.js file
-npm run dev
+# serve project with browser hot reload at localhost:10000
+# port can be configured in platforms/browser/cordova/run file
+npm run hot-dev
 
-# build for production with minification
-npm run build
-
-# Add to the project with Cordova the platforms for Android, iOS or browser
-npm run cordova-add-android
-npm run cordova-add-ios
-npm run cordova-add-browser
-
-# build the app for the given platform
-npm run cordova-build-android
-npm run cordova-build-ios
-npm run cordova-build-browser
-
-# Run the project on the given platform
-npm run cordova-run-android
-npm run cordova-run-ios
-npm run cordova-run-browser
+# you also can serve the project with simultaneous hot reload at your android/ios device and the browser
+npm run hot-dev-ios
+npm run hot-dev-android
 ```
 
 ### Note
@@ -101,10 +87,11 @@ change the next line in the file "platforms/browser/cordova/run":
 
 ## Project Structure
 
-* `src/assets` - folder with static assets (images)
-* `src/components` - folder with custom `.vue` components
-* `src/css` - put custom app CSS styles here. Don't forget to import them in `main.js`
-* `src/pages` - app `.vue` pages
+* `src/static` - folder with static assets (images)
+* `src/assets/css` - put custom app CSS styles here. Don't forget to import them in `main.js`
+* `src/assets/sass` - put custom app CSS styles here. Don't forget to import them in `main.js`
+* `src/assets/vue/pages` - app `.vue` pages
 * `src/main.js` - main app file where you include/import all required libs and init app
 * `src/routes.js` - app routes
-* `src/app.vue` - main app structure/component
+* `src/main.vue` - main app structure/component
+* `src/index.html` - index file

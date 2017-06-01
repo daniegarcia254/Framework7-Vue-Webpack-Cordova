@@ -11,18 +11,24 @@ import Framework7Vue from 'framework7-vue'
 import Framework7Theme from 'framework7/dist/css/framework7.ios.min.css'
 import Framework7ThemeColors from 'framework7/dist/css/framework7.ios.colors.min.css'
 /* OR for Material Theme:
-import Framework7Theme from 'framework7/dist/css/framework7.material.min.css'
-import Framework7ThemeColors from 'framework7/dist/css/framework7.material.colors.min.css'
-*/
+ import Framework7Theme from 'framework7/dist/css/framework7.material.min.css'
+ import Framework7ThemeColors from 'framework7/dist/css/framework7.material.colors.min.css'
+ */
+
+// Import Framework7 Icons
+import Framework7Icons from 'framework7-icons/css/framework7-icons.css'
+
+// Import Nunito FontFace
+import NunitoFontFace from 'nunito-fontface/css/nunito/nunito-fontface.css'
 
 // Import App Custom Styles
-import AppStyles from './css/app.css'
+import AppStyles from './assets/sass/app.scss'
 
 // Import Routes
 import Routes from './routes.js'
 
 // Import App Component
-import App from './app'
+import App from './main.vue'
 
 // Init F7 Vue Plugin
 Vue.use(Framework7Vue)
@@ -36,10 +42,10 @@ new Vue({
     root: '#app',
     /* Uncomment to enable Material theme: */
     // material: true,
-    routes: Routes,
+    routes: Routes
   },
   // Register App Component
   components: {
     app: App
   }
-});
+})
