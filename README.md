@@ -66,16 +66,23 @@ source /home/<user>/.bashrc
 Once you have all the pre-requisites installed, clone this repo and have some fun:
 
 ``` bash
-# install dependencies
+# Install dependencies
 npm install
 
-# serve project with browser hot reload at localhost:10000
-# port can be configured in platforms/browser/cordova/run file
-npm run hot-dev
+# Add cordova platforms
+cordova platform add browser android
 
-# you also can serve the project with simultaneous hot reload at your android/ios device and the browser
-npm run hot-dev-ios
-npm run hot-dev-android
+# Serve project with browser hot reload
+# Default host: localhost IP
+# Defult port: 8081
+HOST="myhost.com" PORT="10001" npm run hot-dev
+
+# The project will be served in HOST:8000, from there, you will be redirected to HOST:PORT
+# To change also the cordova browser port (80000), you can change it in "platforms/browser/cordova/run" file
+
+# You also can serve the project with simultaneous hot reload at your android/ios device and the browser
+HOST="myhost.com" PORT="10001" npm run hot-dev-ios
+HOST="myhost.com" PORT="10001" npm run hot-dev-android
 ```
 
 ### Note
