@@ -101,7 +101,7 @@ change the next line in the file "platforms/browser/cordova/run":
 
 * `src/static` - folder with static assets (images)
 * `src/assets/css` - put custom app CSS styles here. Don't forget to import them in `main.js`
-* `src/assets/sass` - put custom app CSS styles here. Don't forget to import them in `main.js`
+* `src/assets/sass` - put custom app SASS styles here. Don't forget to import them in `main.js`
 * `src/assets/vue/pages` - app `.vue` pages
 * `src/main.js` - main app file where you include/import all required libs and init app
 * `src/routes.js` - app routes
