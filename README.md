@@ -82,8 +82,8 @@ cordova platform add browser android
 # Defult port: 8081
 HOST="myhost.com" PORT="10001" npm run hot-dev
 
-# The project will be served in HOST:8000, from there, you will be redirected to HOST:PORT
-# To change also the cordova browser port (80000), you can change it in "platforms/browser/cordova/run" file
+# The project will be served in HOST:8000, from there, you will be redirected to the default HOST:PORT url
+# To change also the cordova browser port (8000), you can change it in "platforms/browser/cordova/run" file
 
 # You also can serve the project with simultaneous hot reload at your android/ios device and the browser
 HOST="myhost.com" PORT="10001" npm run hot-dev-ios
