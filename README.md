@@ -88,6 +88,7 @@ HOST="myhost.com" PORT="10001" npm run hot-dev
 # You also can serve the project with simultaneous hot reload at your android/ios device and the browser
 HOST="myhost.com" PORT="10001" npm run hot-dev-ios
 HOST="myhost.com" PORT="10001" npm run hot-dev-android
+# These commands of course will run the emulator for the selected platform
 ```
 
 ### Note
