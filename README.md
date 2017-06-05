@@ -9,6 +9,7 @@ Based on [Framework7 - Vue - Webpack Cordova Template](https://github.com/centru
 ### Node.js
 ``` bash
 # install Node.js and NPM
+sudo apt-get update
 curl -sL https://deb.nodesource.com/setup_7.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo apt-get install nodejs
@@ -18,7 +19,11 @@ sudo apt-get install build-essential
 ### Cordova
 ``` bash
 # install Cordova
-npm install -g cordova
+sudo npm install -g cordova
+
+# install packages to generate Icons and Splashscreen for the app
+sudo apt-get install imagemagick
+sudo npm install splashicon-generator -g
 ```
 
 ### Java SDK
@@ -102,3 +107,9 @@ change the next line in the file "platforms/browser/cordova/run":
 * `src/routes.js` - app routes
 * `src/main.vue` - main app structure/component
 * `src/index.html` - index file
+
+## Generate Icons and Splashscreens
+``` bash
+# In the folder 'src/static' should exist two files: icon.png && splash.png
+npm run generate-icon-splash
+```
