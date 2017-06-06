@@ -1,0 +1,44 @@
+{
+  "main": {
+	  "login":{
+		  "fb": "Entrar con Facebook",
+		  "email": "Entrar con email"
+	  },
+	  "or": "o",
+	  "register":{
+		  "title":"¡Regístrate ahora!",
+		  "message":"Es gratis y tendrás acceso<br>a todas las características",
+		  "btn":"¿No tienes cuenta? ¡Regístrate!"
+	  }
+  },
+  "login":{
+	  "placeholders":{
+		  "email":"Email",
+		  "password":"Contraseña"
+	  },
+	  "terms_and_privacy":{
+		  "message": "Al acceder con tu cuenta, aceptas nuestros",
+		  "terms":"Términos y Condiciones",
+		  "conj": " y nuestra ",
+		  "privacy":"Política de Privacidad"
+	  },
+	  "btn": "Entrar"
+  },
+  "register":{
+	  "placeholders":{
+		  "name":"Nombre y apellidos",
+		  "email":"Email",
+		  "password":"Contraseña"
+	  },
+	  "password":{
+		  "conditions":"(La contraseña debe tener al menos 8 caracteres)" 
+	  },
+	  "terms_and_privacy":{
+		  "message": "Al registrarte, aceptas nuestros",
+		  "terms":"Términos y Condiciones",
+		  "conj": " y nuestra ",
+		  "privacy":"Política de Privacidad"
+	  },
+	  "btn": "Registrar"
+  }
+}

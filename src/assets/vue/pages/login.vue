@@ -10,10 +10,10 @@
 		<!-- Login form -->
 		<f7-list form>
 			<f7-list-item>
-				<f7-input type="text" autofocus required placeholder="Email"></f7-input>
+				<f7-input type="text" v-bind:placeholder="$t('login.placeholders.email')" autofocus required></f7-input>
 			</f7-list-item>
 			<f7-list-item>
-				<f7-input type="password" required placeholder="Password"></f7-input>
+				<f7-input type="password" v-bind:placeholder="$t('login.placeholders.password')" required></f7-input>
 			</f7-list-item>
 		</f7-list>
 
@@ -21,9 +21,11 @@
 		<f7-block id="terms-and-conditions">
 			<f7-grid center>
 				<f7-col>
-					<span>When Sign Up or Log in, you accept our<br>
-						<f7-link>Terms and Conditions</f7-link> and 
-						our <f7-link>Privacy Policy</f7-link></span>
+					<span>{{ $t("login.terms_and_privacy.message") }}<br>
+						<f7-link>{{ $t("login.terms_and_privacy.terms") }}</f7-link>
+						{{ $t("login.terms_and_privacy.conj") }}
+						<f7-link>{{ $t("login.terms_and_privacy.privacy") }}</f7-link>
+					</span>
 				</f7-col>
 			</f7-grid>
 		</f7-block>
@@ -33,7 +35,7 @@
 			<f7-grid center>
 				<f7-col>
 					<f7-button big fill id="login-btn">
-						<span>Log in</span>
+						<span>{{ $t("login.btn") }}</span>
 					</f7-button>
 				</f7-col>
 			</f7-grid>		

@@ -1,0 +1,44 @@
+{
+  "main": {
+	  "login":{
+		  "fb": "Log in with Facebook",
+		  "email": "Log in with your email"
+	  },
+	  "or":"or",
+	  "register":{
+		  "title":"Register now!",
+		  "message":"It's free and you will have<br>access to all the features",
+		  "btn":"Don't have an account? Register!"
+	  }
+  },
+  "login":{
+	  "placeholders":{
+		  "email":"Email",
+		  "password":"Password"
+	  },
+	  "terms_and_privacy":{
+		  "message": "When Sign Up or Log in, you accept our",
+		  "terms":"Terms and Condition",
+		  "conj": " and our ",
+		  "privacy":"Privacy Policy"
+	  },
+	  "btn": "Log in"
+  },
+  "register":{
+	  "placeholders":{
+		  "name":"Name and Surname",
+		  "email":"Email",
+		  "password":"Password"
+	  },
+	  "password":{
+		  "conditions":"(Password should be at least 8 characters length)" 
+	  },
+	  "terms_and_privacy":{
+		  "message": "When Sign Up, you accept our",
+		  "terms":"Terms and Condition",
+		  "conj": " and our ",
+		  "privacy":"Privacy Policy"
+	  },
+	  "btn": "Sign Up"
+  }
+}

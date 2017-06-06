@@ -1,6 +1,9 @@
 // Import Vue
 import Vue from 'vue'
 
+// Import Vue-i18n
+import i18n from './i18n'
+
 // Import F7
 import Framework7 from 'framework7'
 
@@ -37,6 +40,7 @@ Vue.use(Framework7Vue)
 new Vue({
   el: '#app',
   template: '<app/>',
+  i18n,
   // Init Framework7 by passing parameters here
   framework7: {
     root: '#app',
@@ -48,4 +52,4 @@ new Vue({
   components: {
     app: App
   }
-})
+});
