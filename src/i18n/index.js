@@ -3,8 +3,6 @@ import VueI18n from 'vue-i18n';
 
 Vue.use(VueI18n);
 
-console.log("LANGUAGE", window.navigator.userLanguage || window.navigator.language);
-
 const i18n = new VueI18n({
   locale: window.navigator.userLanguage || window.navigator.language,
   fallbackLocale: 'en',
