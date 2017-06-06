@@ -56,7 +56,7 @@
 
 <script>
 
-
+import Vue from 'vue';
 
 export default {
 	data: function () {
@@ -67,6 +67,7 @@ export default {
 	methods: {
 		facebookLogin(){
 			console.log("FACEBOOK LOGIN");	
+			this.$i18n.locale = 'en';
 		},
 		emailLogin(){
 			console.log("EMAIL LOGIN");	
