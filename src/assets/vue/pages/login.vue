@@ -8,18 +8,22 @@
 		</f7-navbar>
 
 		<!-- Login form -->
-		<f7-list form>
-			<f7-list-item>
-				<f7-input type="text" v-bind:placeholder="$t('login.placeholders.email')" autofocus required></f7-input>
-			</f7-list-item>
-			<f7-list-item>
-				<f7-input type="password" v-bind:placeholder="$t('login.placeholders.password')" required></f7-input>
-			</f7-list-item>
-		</f7-list>
+		<f7-grid>
+			<f7-col width="90" tablet-width="60">
+				<f7-list form>
+					<f7-list-item>
+						<f7-input type="text" v-bind:placeholder="$t('login.placeholders.email')" autofocus required></f7-input>
+					</f7-list-item>
+					<f7-list-item>
+						<f7-input type="password" v-bind:placeholder="$t('login.placeholders.password')" required></f7-input>
+					</f7-list-item>
+				</f7-list>
+			</f7-col>
+		</f7-grid>
 
 		<!-- Terms and conditions -->	
 		<f7-block id="terms-and-conditions">
-			<f7-grid center>
+			<f7-grid>
 				<f7-col>
 					<span>{{ $t("login.terms_and_privacy.message") }}<br>
 						<f7-link>{{ $t("login.terms_and_privacy.terms") }}</f7-link>
@@ -32,8 +36,8 @@
 
 		<!-- Login button -->
 		<f7-block>
-			<f7-grid center>
-				<f7-col>
+			<f7-grid>
+				<f7-col width="100" tablet-width="50">
 					<f7-button big fill id="login-btn">
 						<span>{{ $t("login.btn") }}</span>
 					</f7-button>

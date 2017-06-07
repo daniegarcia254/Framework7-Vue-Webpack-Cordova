@@ -11,21 +11,21 @@
 				<f7-pages>
 					<f7-page id="main-view">
 						<f7-block id="block-fb-email-login">
-							<f7-grid center>
-								<f7-col>
+							<f7-grid>
+								<f7-col width="100" tablet-width="50">
 									<f7-button big fill id="fb-login-btn" @click="facebookLogin">
 										<i class="f7-icons" data-position="left">social_facebook_fill</i>
 										<span>{{ $t("main.login.fb") }}</span>
 									</f7-button>
 								</f7-col>
 							</f7-grid>
-							<f7-grid center>
-								<f7-col>
+							<f7-grid>
+								<f7-col width="100" tablet-width="50">
 									<span>{{ $t("main.or") }}</span>
 								</f7-col>
 							</f7-grid>
-							<f7-grid center>
-								<f7-col>
+							<f7-grid>
+								<f7-col width="100" tablet-width="50">
 									<f7-button big fill id="email-login-btn" @click="$f7.mainView.router.load({url: '/login/'})">
 										<span>{{ $t("main.login.email") }}</span>
 									</f7-button>
@@ -33,14 +33,14 @@
 							</f7-grid>
 						</f7-block>
 						<f7-block id="block-register-login">
-							<f7-grid center>
+							<f7-grid>
 								<f7-col>
 									<span>{{ $t("main.register.title") }}</span><br>
 									<span v-html="$t('main.register.message')"></span>
 								</f7-col>
 							</f7-grid>
-							<f7-grid center>
-								<f7-col>
+							<f7-grid>
+								<f7-col width="100" tablet-width="50">
 									<f7-button big id="register-login-btn" @click="$f7.mainView.router.load({url: '/register/'})">
 										<span>{{ $t("main.register.btn") }}</span>
 									</f7-button>

@@ -45,6 +45,13 @@ GENERAL STYLES
 }
 
 
+/* Width for cols in normal mode and tablet mode  */
+.row .col-100, .row .col-90 {
+	float: none;
+	margin: 0 auto;
+}
+
+
 /* =========
   IMPORTS
 ========= */
