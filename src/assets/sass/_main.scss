@@ -34,7 +34,7 @@ MAIN PAGE
 #login-btn {
 	margin: 0px 50px;
 }
-#email-login-btn span, #login-btn span{
+#email-login-btn span, #login-btn span {
 	margin: 0px 20px;
 	font-size: 15px;
 }
@@ -45,4 +45,5 @@ MAIN PAGE
 	border-width: 2px;
 	border-color: white;
 	color: white;
+	span { font-size: 15px; }
 }
