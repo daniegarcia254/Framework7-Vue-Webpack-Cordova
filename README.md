@@ -94,9 +94,10 @@ HOST="myhost.com" PORT="10001" npm run hot-dev-android
 ### Note
 When you run the app using the browser platform, if you don't want the browser to auto-open,
 change the next line in the file "platforms/browser/cordova/run":
+```
 	//return cordovaServe.launchBrowser({target: args.target, url: projectUrl});
         return cordovaServe;
-
+```
 
 ## Project Structure
 
